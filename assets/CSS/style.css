@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+/* Estilo CSS Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif ;
+    font-weight: 400;
+}
+
+body{
+    /* background-image: url("./assets/img/dev-purple.png"); */
+    background: linear-gradient(90deg,#8349f4,#c255be);
+    /* background-color: rgba(43, 0, 56, 0.589) ; */
+    color: #f4f4f4;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1,h2{
+    font-family: 'Bebas Neue',sans-serif;
+    color: #f4f4f4;
+    text-align: center;
+    margin-top: 1.5rem;
+
+}
+/*Delimitando o mínimo e o máximo que o h1 pode expandir conforme a tela usada*/
+h1{
+    font-size: clamp(2.5rem,3vw, 3.5rem);
+}
+h2{
+    font-size: max(2vw,2rem);
+}
+
+hr{
+  border: 2x solid #f4f4f4;
+  width:65%;
+  margin: 0 auto;
+  border-radius: 1rem
+}
+
+center{
+    text-align: center;
+} 
+
+a{
+    text-decoration: none;
+    color:#c255be;
+    font-size: 1.85rem;
+    transition: color .3s ease-in;
+}
+
+a:hover{
+    color:#6027ca;
+    text-decoration: wavy;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    font-size: max(1rem);
+    color: #6027ca;
+    gap: 1rem;
+    padding-left: 20px;
+}
+
+.video{
+    width:40vw;
+    aspect-ratio: 3/2;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 30px;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 0.88rem;
+    padding-bottom: 0.88rem;
+    background-color: #f4f4f4db;
+}
+
+.navbar li {
+    color:  #c255be;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.tm-social{
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+
+/* Estilo da página Index */
+
+.aboutme{
+    width: 65vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    background-color: #f4f4f4bd;
+    border: 4px solid #f4f4f4;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.fotoperfil{
+    border-radius: 50%;
+    width: 15wn;
+    border: 0px solid #f4f4f4;
+    box-shadow: 2px 2px 5px rgb(19, 7, 7);
+}
+
+/* Estilo da página Contato */
+
+.contato {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70vw;
+    margin: 0 auto;
+    min-height: 70vh;
+}
+
+.formulario {
+    max-width: 20vw
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+.mapa {
+    width: 35vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.enviar {
+    width: 75%;
+    margin: 1rem auto;
+    display: block;
+    padding: 1rem 0;
+    border-radius: 16px;
+    border: 3px solid #5d249e;
+    background-color: transparent;
+    color: #f4f4f0;
+    font-size: 1.275rem;
+    transition: background-color .3s ease-out;
+}
+
+.enviar:hover {
+    background-color: #c255be;
+}
+
+/* Responsividade para celular */
+
+@media (max-width: 768px) {
+
+    .navbar{
+        padding-top: 0.98rem;
+        padding-bottom: 0.78rem;
+    }
+    .aboutme {
+      width: 88vw;
+      flex-direction: column-reverse;
+      background-color: transparent;
+      border: 0px solid;
+    }
+
+    .texto{
+        background-color: #5d249e;
+        padding: 40px;
+        border-radius: 15px;
+        color:#f4f4f4;
+    }
+
+    .fotoperfil {
+        width: 72vw;
+        border-radius: 2rem;
+        }
+    
+    .video {
+        width: 90vw;
+        height:60vw ;
+    }
+
+    footer{
+        padding: 1rem 0;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+    .contato {
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 95vw;   
+    }
+
+    .formulario {
+        max-width: 90vw
+    }
+
+    .mapa{
+       
+        max-width: 80vw;
+        height: 75vw;
+
+    }
+    hr{
+        margin-top: 10px;
+    }
+}

@@ -4,36 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato Dharan</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
-    <ul>
-        <li><a href="index.html"> Home </a></li>
-        <li><a href="contato.html"> Contato </a></li>
-    </ul>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="postagens.html"> Blog </a></li>
+            <li><a href="contato.html"> Contato </a></li>
+        </ul>
+    </nav>
+    <main>
+            <h1>Entre em contato</h1>
 
-    <h1>Entre em contato comigo</h1>
+            <section class="contato">
+                <div class="formulario">
+                    <form action="">
+                        <div>
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email">
+                         </div>
+                        <div>
+                            <label for="Assunto">Assunto:</label>
+                            <textarea name="assunto" id="assunto" cols="60" rows="5" ></textarea>
+                        </div>
+                    
+                        <button class="enviar">Enviar</button>
+                    </form>
+                </div>
+                <div class="mapa">
+                    <p>Rua Vergueiro, 1000 </p>
+                    <p>Paraíso, São Paulo - SP, 01504-000</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.3187939560435!2d-46.641676839714776!3d-23.571249874621444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7dd3fbd5b75f653a!2zMjPCsDM0JzEyLjMiUyA0NsKwMzgnMjUuMCJX!5e0!3m2!1spt-BR!2sbr!4v1647553427774!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+    </main>   
 
-    <form action="">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="Assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="60" rows="5" ></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+    <hr>
+    <footer>
+        <div class="">
+            <a href="https://www.linkedin.com/in/dharancosta/" target="_blank"><img class="tm-social"src="assets/img/linkedin.png" alt="Logo do Linkedin"></a>
+            <a href="https://github.com/DharanCosta" target="_blank"><img class="tm-social"src="assets/img/github.png" alt="Logo do Github"></a>
+            <a href="" target="_blank"><img class="tm-social"src="assets/img/download.png" alt="Download meu CV "></a>
+        </div>
 
-    <h2>Endereço:</h2>
-    <p>Rua Vergueiro, 1000 </p>
-    <p>Paraíso, São Paulo - SP, 01504-000</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.925654265774!2d-46.64231818502197!3d-23.571113484678037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59984baaaaab%3A0x8e470a76a1aef0d7!2sCentro%20Cultural%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1647451290174!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p class="center">
+            Todos os direiros reservados: Dharan Costa &copy  - 2022
+        </p>
+    </footer>
 
 </body>
 
