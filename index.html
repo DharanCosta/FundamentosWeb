@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html"> Home </a></li>
-            <!-- git a -->
-            <li><a href="contato.html"> Contato </a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="company-logo">DH</div>
+        <nav class="navbar">
+            <ul class="nav-items">
+              <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+              <li class="nav-item"><a href="postagens.html" class="nav-link">BLOG</a></li>
+              <li class="nav-item"><a href="contato.html" class="nav-link">CONTATO</a></li>
+            </ul>
+          </nav>
+        <div class="menu-toggle">
+            <i class="bx bx-menu"></i>
+            <i class="bx bx-x"></i>
+          </div>
+        
+        
+    </header>
 <main>
     <h1>About Me, Dharis</h1>
         <div class ="aboutme">
@@ -24,31 +35,33 @@
                     
                 </div>
 
-            <img class="fotoperfil"src="https://github.com/DharanCosta.png" alt="Foto de perfil"> 
+            <img class="fotoperfil"src="https://github.com/DharanCosta.png" alt="Foto de perfil" width="300px"> 
         </div>
 
         <section>
-            <h2>Meu vídeo predileto do momento</h2>
-            <div class="">
-                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/sW9npZVpiMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Uma lembrança especial...</h2>
+            <div>
+                <iframe class="video", width="560" height="315" src="https://www.youtube.com/embed/ac759bvSBzs?start=21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
             </div>
+            <p class="mgbt-10">...uma aventura no mundo Pókemon, apareço no minuto 0:21 :)</p>
         </section>
 </main>
 <hr>
     <footer>
         <div class="">
-            <a href="https://www.linkedin.com/in/dharancosta/
+            <a class="linkfoot" href="https://www.linkedin.com/in/dharancosta/
             " target="_blank"><img class="tm-social"src="assets/img/linkedin.png" alt="Logo do Linkedin"></a>
-            <a href="https://github.com/DharanCosta" target="_blank"><img class="tm-social"src="assets/img/github.png" alt="Logo do Github"></a>
-            <a href="" target="_blank"><img class="tm-social"src="assets/img/download.png" alt="Download meu CV "></a>
+            <a class="linkfoot" href="https://github.com/DharanCosta" target="_blank"><img class="tm-social"src="assets/img/github.png" alt="Logo do Github"></a>
+            <img class="tm-social linkfoot" onclick="subirTela()"src="assets/img/up-arrow.png" alt="Volta ao topo">
         </div>
 
-        <p class="center">
+        <p>
             Todos os direiros reservados: Dharan Costa &copy  - 2022
         </p>
     </footer>
 
-
+    <script src="./assets/script/script.js"></script>
 </body>
 
 </html>

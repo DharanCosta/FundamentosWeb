@@ -6,42 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato Dharan</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html"> Home </a></li>
-            <li><a href="postagens.html"> Blog </a></li>
-            <li><a href="contato.html"> Contato </a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="company-logo">DH</div>
+        <nav class="navbar">
+            <ul class="nav-items">
+              <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+              <li class="nav-item"><a href="postagens.html" class="nav-link">BLOG</a></li>
+              <li class="nav-item"><a href="contato.html" class="nav-link">CONTATO</a></li>
+            </ul>
+          </nav>
+        <div class="menu-toggle">
+            <i class="bx bx-menu"></i>
+            <i class="bx bx-x"></i>
+          </div>
+        
+        
+    </header>
+
     <main>
-            <h1>Entre em contato</h1>
+        <h1>Entre em contato</h1>
 
             <section class="contato">
                 <div class="formulario">
-                    <form action="">
-                        <div>
-                            <label for="nome">Nome:</label>
-                            <input type="text" id="nome">
-                        </div>
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email">
-                         </div>
-                        <div>
-                            <label for="Assunto">Assunto:</label>
-                            <textarea name="assunto" id="assunto" cols="60" rows="5" ></textarea>
-                        </div>
-                    
-                        <button class="enviar">Enviar</button>
+                    <form>
+                        
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" onkeyup="validaNome()">
+                        <div id='txtNome'></div>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" onkeyup="validaEmail()">
+                        <div id='txtEmail'></div>
+                        
+                        <label for="Assunto">Assunto:</label>
+                        <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()" ></textarea>
+                        <div id='txtAssunto'></div>
+                        <div id="contador"></div>
+                        <button class="enviar" onclick="enviar()">Enviar</button>
+
                     </form>
                 </div>
                 <div class="mapa">
+                    
+                    <iframe class="mapabox" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.3187939560435!2d-46.641676839714776!3d-23.571249874621444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7dd3fbd5b75f653a!2zMjPCsDM0JzEyLjMiUyA0NsKwMzgnMjUuMCJX!5e0!3m2!1spt-BR!2sbr!4v1647553427774!5m2!1spt-BR!2sbr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()" ></iframe>
                     <p>Rua Vergueiro, 1000 </p>
                     <p>Paraíso, São Paulo - SP, 01504-000</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.3187939560435!2d-46.641676839714776!3d-23.571249874621444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7dd3fbd5b75f653a!2zMjPCsDM0JzEyLjMiUyA0NsKwMzgnMjUuMCJX!5e0!3m2!1spt-BR!2sbr!4v1647553427774!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    
                 </div>
             </section>
     </main>   
@@ -49,15 +62,17 @@
     <hr>
     <footer>
         <div class="">
-            <a href="https://www.linkedin.com/in/dharancosta/" target="_blank"><img class="tm-social"src="assets/img/linkedin.png" alt="Logo do Linkedin"></a>
-            <a href="https://github.com/DharanCosta" target="_blank"><img class="tm-social"src="assets/img/github.png" alt="Logo do Github"></a>
-            <a href="" target="_blank"><img class="tm-social"src="assets/img/download.png" alt="Download meu CV "></a>
+            <a class="linkfoot" href="https://www.linkedin.com/in/dharancosta/
+            " target="_blank"><img class="tm-social"src="assets/img/linkedin.png" alt="Logo do Linkedin"></a>
+            <a class="linkfoot" href="https://github.com/DharanCosta" target="_blank"><img class="tm-social"src="assets/img/github.png" alt="Logo do Github"></a>
+            <img class="tm-social linkfoot" onclick="subirTela()"src="assets/img/up-arrow.png" alt="Volta ao topo">
         </div>
 
-        <p class="center">
+        <p class="">
             Todos os direiros reservados: Dharan Costa &copy  - 2022
         </p>
     </footer>
+    <script src="./assets/script/script.js"></script>
 
 </body>
 
